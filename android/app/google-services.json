@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "42437193118",
+    "firebase_url": "https://valo-ta-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "valo-ta",
+    "storage_bucket": "valo-ta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42437193118:android:af44a294245b6ba56e3a8f",
+        "android_client_info": {
+          "package_name": "com.valothaka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42437193118-uffnf3j92k7r2ag685ca7urdbp00cv0m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWlRz_AUh8eBdaKx55ltaQt6aTPTZoMp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42437193118-uffnf3j92k7r2ag685ca7urdbp00cv0m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
