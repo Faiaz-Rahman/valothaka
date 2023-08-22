@@ -1,4 +1,4 @@
-import React, {useState, useContext, useEffect} from 'react';
+import React, { useState, useContext, useEffect } from 'react'
 import {
   View,
   Text,
@@ -6,19 +6,19 @@ import {
   StatusBar,
   StyleSheet,
   TouchableOpacity,
-} from 'react-native';
+} from 'react-native'
 
-import {Buttons, CustomTextInput} from '../components';
-import {DIM, COLORS} from '../constants';
-import {AuthContext} from '../navigation/AuthProvider';
+import { Buttons, CustomTextInput } from '../components'
+import { DIM, COLORS } from '../constants'
+import { AuthContext } from '../navigation/AuthProvider'
 
-import LottieView from 'lottie-react-native';
+import LottieView from 'lottie-react-native'
 
-function LoginScreen({navigation}) {
-  const [email, setEmail] = useState('');
-  const [pass, setPass] = useState('');
+function LoginScreen({ navigation }) {
+  const [email, setEmail] = useState('faiazrahman70@gmail.com')
+  const [pass, setPass] = useState('123456')
 
-  const {login, animShow, setAnimShow} = useContext(AuthContext);
+  const { login, animShow, setAnimShow } = useContext(AuthContext)
 
   const interval = () => {
     return (
@@ -32,8 +32,8 @@ function LoginScreen({navigation}) {
           }}></View>
         <LottieView source={require('../asset/friends.json')} autoPlay loop />
       </>
-    );
-  };
+    )
+  }
 
   return (
     <>
@@ -77,11 +77,11 @@ function LoginScreen({navigation}) {
           <Buttons
             title="Login"
             onPress={() => {
-              setAnimShow(true);
+              setAnimShow(true)
               setTimeout(() => {
-                login(email, pass);
+                login(email, pass)
                 // setAnimShow(false);
-              }, 3000);
+              }, 3000)
             }}
           />
           <View
@@ -101,10 +101,10 @@ function LoginScreen({navigation}) {
             </Text>
             <TouchableOpacity
               onPress={() => {
-                navigation.navigate('Sign up');
+                navigation.navigate('Sign up')
               }}>
               <Text
-                style={{fontSize: 19, color: 'turquoise', fontWeight: '700'}}>
+                style={{ fontSize: 19, color: 'turquoise', fontWeight: '700' }}>
                 Sign Up !
               </Text>
             </TouchableOpacity>
@@ -112,7 +112,7 @@ function LoginScreen({navigation}) {
         </View>
       )}
     </>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -122,6 +122,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'white',
   },
-});
+})
 
-export default LoginScreen;
+export default LoginScreen
